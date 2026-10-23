@@ -49,10 +49,6 @@ class StudentController
         $totalStudents = count($students);
         require __DIR__ . '/../Views/students/statistics.php';
     }
+    
 }
-public function statistics(): void
-{
-    $students = Student::all();
-    $totalStudents = count($students);
-    require __DIR__ . '/../Views/students/statistics.php';
-}
+
