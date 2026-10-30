@@ -1,0 +1,227 @@
+/* Базовые настройки страницы */
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #222;
+    background: #f5f7fa;
+}
+a {
+    color: #175cd3;
+}
+/* Блок шапки и его элементы */
+.site-header {
+    background: #1f2937;
+    color: #fff;
+}
+.site-header__inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+.site-header__brand {
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.site-nav__link {
+    color: #fff;
+    text-decoration: none;
+}
+.site-nav__link:hover {
+    text-decoration: underline;
+}
+/* Основной контейнер и заголовки */
+.page {
+    max-width: 1000px;
+    min-height: 65vh;
+    margin: 28px auto;
+    padding: 0 24px 32px;
+}
+.page__title {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.8rem;
+}
+.page__lead {
+    color: #475467;
+}
+/* Блок списка студентов */
+.student-list__items {
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+}
+.student-list__item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    padding: 14px 16px;
+    border-bottom: 1px solid #d0d5dd;
+    background: #fff;
+}
+.student-list__link {
+    font-weight: 700;
+}
+.student-list__email {
+    color: #475467;
+}
+.student-list__empty {
+    padding: 16px;
+    border: 1px dashed #98a2b3;
+    border-radius: 8px;
+}
+/* Блок формы студента и его элементы */
+.student-form__form {
+    max-width: 520px;
+    padding: 24px;
+    border: 1px solid #d0d5dd;
+    border-radius: 10px;
+    background: #fff;
+}
+.student-form__field {
+    display: block;
+    margin-bottom: 18px;
+}
+.student-form__label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+.student-form__input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #98a2b3;
+    border-radius: 6px;
+    font: inherit;
+}
+.student-form__input:focus {
+    outline: 2px solid #84adff;
+    outline-offset: 1px;
+}
+/* Блок кнопки с модификаторами */
+.button {
+    display: inline-block;
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 6px;
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+.button--primary {
+    color: #fff;
+    background: #175cd3;
+}
+.button--secondary {
+    color: #344054;
+    background: #eaecf0;
+}
+.button:hover {
+    filter: brightness(0.95);
+}
+/* Блок сообщения и модификаторы состояния */
+.alert {
+    margin: 16px 0;
+    padding: 12px 16px;
+    border-radius: 6px;
+}
+.alert--error {
+    color: #912018;
+    background: #fef3f2;
+    border: 1px solid #fecdca;
+}
+.alert--warning {
+    color: #7a2e0e;
+    background: #fffaeb;
+    border: 1px solid #fedf89;
+}
+/* Блок карточки студента */
+.student-card__details {
+    max-width: 620px;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    background: #fff;
+}
+.student-card__row {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eaecf0;
+}
+@media (max-width: 640px) {
+    .site-header__inner {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .student-card__row {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+}
+.student-card__row:last-child {
+    border-bottom: 0;
+}
+.student-card__label {
+    color: #475467;
+    font-weight: 700;
+}
+.student-card__value {
+    margin: 0;
+}
+/* Блок новой страницы статистики */
+.student-stats__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin: 24px 0;
+}
+.student-stats__item {
+    padding: 20px;
+    border: 1px solid #d0d5dd;
+    border-radius: 10px;
+    background: #fff;
+}
+.student-stats__item--highlight {
+    border-color: #84adff;
+    background: #eff8ff;
+}
+.student-stats__label {
+    margin: 0 0 8px;
+    font-size: 1rem;
+}
+.student-stats__value {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+/* Подвал сайта */
+.site-footer {
+    padding: 18px 24px;
+    color: #fff;
+    background: #1f2937;
+    text-align: center;
+}
+.site-footer__text {
+    margin: 0;
+}
