@@ -22,4 +22,3 @@ switch ($action) {
         http_response_code(404);
         echo 'Страница не найдена';
 }
-

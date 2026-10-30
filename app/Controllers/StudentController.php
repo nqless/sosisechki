@@ -49,6 +49,6 @@ class StudentController
         $totalStudents = count($students);
         require __DIR__ . '/../Views/students/statistics.php';
     }
-    
+
 }
 
