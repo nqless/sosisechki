@@ -295,4 +295,14 @@ a {
 .button--primary:hover {
     background-color: #0056b3;
 }
+.product-list { display: flex; flex-direction: column; gap: 10px; }
+.product-list__item { padding: 10px 14px; border: 1px solid #ddd; border-radius: 6px; display: flex; justify-content: space-between; }
+.product-list__link { color: #1a56db; text-decoration: none; }
+.product-list__link:hover { text-decoration: underline; }
 
+.product-form { max-width: 400px; }
+.product-form__field { margin-bottom: 12px; }
+.product-form__input { width: 100%; padding: 8px; box-sizing: border-box; }
+
+.button { display: inline-block; padding: 8px 16px; border: none; border-radius: 6px; cursor: pointer; }
+.button--primary { background: #1a56db; color: #fff; }

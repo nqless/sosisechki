@@ -1,14 +1,7 @@
-<?php include __DIR__ . '/../include/header.php'; ?>
+<?php require __DIR__ . '/../../../include/header.php'; ?>
 
-<main class="content">
-    <h1>Карточка товара</h1>
-    <div class="product-card">
-        <p><strong>ID товара:</strong> <?= e($product['id']) ?></p>
-        <p><strong>Наименование:</strong> <?= e($product['title']) ?></p>
-        <p><strong>Цена:</strong> <?= e($product['price']) ?> руб.</p>
-    </div>
-    <br>
-    <a href="index.php?action=products" class="button button--primary">Назад к списку</a>
-</main>
+<h1><?= e($product['title']) ?></h1>
+<p>Цена: <?= e($product['price']) ?> ₽</p>
+<a class="product-list__link" href="index.php?action=indexProd">← К каталогу</a>
 
-<?php include __DIR__ . '/../include/footer.php'; ?>
+<?php require __DIR__ . '/../../../include/footer.php'; ?>

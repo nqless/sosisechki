@@ -12,9 +12,12 @@
     <div class="site-header__inner">
         <a class="site-header__brand" href="index.php">Учёт студентов</a>
         <nav class="site-nav" aria-label="Основная навигация">
-            <a class="site-nav__link" href="index.php">Список</a>
+            <a class="site-nav__link" href="index.php">Список студентов</a>
             <a class="site-nav__link" href="index.php?action=create">Добавить студента</a>
             <a class="site-nav__link" href="index.php?action=statistics">Статистика</a>
+            <a class="site-nav__link" href="index.php?action=indexProd">Список продуктов</a>
+            <a class="site-nav__link" href="index.php?action=createProd">Добавить продуктов</a>
+            
         </nav>
     </div>
 </header>
